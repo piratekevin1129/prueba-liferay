@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/banner.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pagination.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/afiliaciones.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/certificados-carnet.css" rel="stylesheet" type="text/css" />
+
+    <!-- Library font awesome pro -->
+    <script src="https://kit.fontawesome.com/7b8122d71f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-accesibilidad-parent">
+            <div class="header-accesibilidad">
+                <div class="accesibilidad-btn">
+                    <p>Accesibilidad</p>
+                    <i class="fal fa-universal-access" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header-main-menu-parent">
+            <div class="header-main-menu">
+                <img src="assets/images/logo-sura.svg" />
+                <div class="main-menu-right">
+                    <nav class="main-menu-content">
+                        <ul class="main-menu">
+                            <li><p>Afiliarme</p><i class="far fa-angle-down" aria-hidden="true"></i></li>
+                            <li><p>Atención en salud</p><i class="far fa-angle-down" aria-hidden="true"></i></li>
+                            <li><p>Trámites</p><i class="far fa-angle-down" aria-hidden="true"></i></li>
+                            <li><p>Centro de ayuda</p><i class="far fa-angle-down" aria-hidden="true"></i></li>
+                        </ul>
+                    </nav>
+                    <button class="buscar-btn">
+                        <i class="fal fa-search" aria-hidden="true"></i>
+                    </button>
+                    <a href="#" class="pago-express-btn">
+                        Pago Express
+                    </a>
+                    <a href="#" class="iniciar-sesion-btn">
+                        Iniciar sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-arl-parent">
+            <div class="header-arl">
+                <p>ARL</p>
+            </div>
+        </div>
+
+        <nav id="main-menu">
+            <ul class="main-menu-ul">
+                <li class="main-menu-item">
+                    <div class="main-menu-row">
+                        <div class="main-menu-col1">
+                            <h1>Afiliarme</h1>
+                            <div class="main-menu-img">
+                                <img src="assets/images/menu/1.png" />
+                            </div>
+                        </div>
+                        <div class="main-menu-col2">
+                            <ul class="main-menu-subitems">
+                                <li onmouseover="overSubitems(1, 'subitems-menu-afiliarme')">
+                                    <span>¿Cómo realizar una afiliación?</span>
+                                </li>
+                                <li onmouseover="overSubitems(2, 'subitems-menu-afiliarme')">
+                                    <span>¡Quiero afiliarme!</span>
+                                </li>
+                                <li onmouseover="overSubitems(3, 'subitems-menu-afiliarme')">
+                                    <span>Consulta si estas afiliado a la ARL</span>
+                                </li>
+                                <li onmouseover="overSubitems(4, 'subitems-menu-afiliarme')">
+                                    <span>Consulta estado de afiliación</span>
+                                </li>
+                                <li onmouseover="overSubitems(5, 'subitems-menu-afiliarme')">
+                                    <span>Traslado de ARL</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-menu-col3" id="subitems-menu-afiliarme">
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 1</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 2</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 3</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 4</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 5</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 6</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 7</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 8</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 9</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 10</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 11</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 12</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 13</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 14</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Item 15</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <!--Banner-->
+    <div class="banner-app">
+        <div class="banner-wrap" active="1" id="banner-component" object-class="banner-row" active-class="banner-row-active" total="3">
+            <div class="banner-row banner-oscuro banner-row-active">
+                <div class="banner-main-info">
+                    <h1>Adquiere el Plan Accidentes por solo $16.500 semestrales.</h1>
+                    <a href="#"><span>Ingresa</span> <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="banner-resume-info">
+                    <p>Plan Accidentes por $16.500</p>
+                    <i class="far fa-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="banner-main-pic">
+                    <div class="banner-main-photo" style="background-image: url(assets/images/banner/1.png);"></div>
+                </div>
+            </div>
+            
+            <div class="banner-row banner-claro">
+                <div class="banner-main-info">
+                    <h1>Adquiere el Plan Accidentes por solo $16.500 semestrales.</h1>
+                    <a href="#"><span>Ingresa</span> <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="banner-resume-info">
+                    <p>Plan Accidentes por $16.500</p>
+                    <i class="far fa-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="banner-main-pic">
+                    <div class="banner-main-photo" style="background-image: url(assets/images/banner/2.png);"></div>
+                </div>
+            </div>
+            
+            <div class="banner-row banner-claro">
+                <div class="banner-main-info">
+                    <h1>Adquiere el Plan Accidentes por solo $16.500 semestrales.</h1>
+                    <a href="#"><span>Ingresa</span> <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="banner-resume-info">
+                    <p>Plan Accidentes por $16.500</p>
+                    <i class="far fa-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="banner-main-pic">
+                    <div class="banner-main-photo" style="background-image: url(assets/images/banner/3.png);"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination-app" id="banner-pagination">
+            <button type="button" class="pagination-prev-btn" onclick="clickPaginationPrev('banner-component', 'banner-pagination')">
+                <i class="far fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="pagination-pages">
+                <div class="pagination-page pagination-page-active"></div>
+                <div class="pagination-page"></div>
+                <div class="pagination-page"></div>
+            </div>
+            <button type="button" class="pagination-next-btn" onclick="clickPaginationNext('banner-component', 'banner-pagination')">
+                <i class="far fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <!--Afiliaciones-->
+    <div class="afiliaciones-app">
+        <h1>Todo sobre afiliaciones</h1>
+        <br>
+        <br>
+
+        <div id="afiliaciones-header">
+            <div id="afiliaciones-header-tab-1" class="afiliaciones-header-tab afiliaciones-header-tab-active" onclick="clickAfiliacion(1)"><span>Afíliate</span></div>
+            <div id="afiliaciones-header-tab-2" class="afiliaciones-header-tab" onclick="clickAfiliacion(2)"><span>Empresa</span></div>
+            <div id="afiliaciones-header-tab-3" class="afiliaciones-header-tab" onclick="clickAfiliacion(3)"><span>Independiente</span></div>
+            <div id="afiliaciones-header-tab-4" class="afiliaciones-header-tab" onclick="clickAfiliacion(4)"><span>Derechos y deberes</span></div>
+        </div>
+        
+        <div id="afiliaciones-body">
+            <div class="afiliaciones-content afiliaciones-content-active" id="afiliaciones-content-1">
+                <div class="afiliaciones-content-row1">
+                    <div class="afiliaciones-content-row1-img">
+                        <img src="assets/images/afiliaciones/1-1.png" />
+                    </div>
+                    <div class="afiliaciones-content-row1-data">
+                        <h3>Inicia la afiliación en línea</h3>
+                        <p>Disfruta de todos los programas y servicios que tenemos para ti y tus colaboradores con el acompañamiento a la salud y seguridad en tu lugar de trabajo.</p>
+                        <a href="#"><span>¡Quiero afiliarme!</span> <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="afiliaciones-content-row2">
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/2-1.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>Consulta si estás afiliado a la ARL</h3>
+                            <p>Consulta tu afiliación con el tipo de documento y el número de identificación de la empresa o el colaborador</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/3-1.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>Consulta el estado de tu afiliación</h3>
+                            <p>Consulta el estado actual del trámite de afiliación como empleador o independiente</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="afiliaciones-content" id="afiliaciones-content-2">
+                <div class="afiliaciones-content-row1">
+                    <div class="afiliaciones-content-row1-img">
+                        <img src="assets/images/afiliaciones/1-2.png" />
+                    </div>
+                    <div class="afiliaciones-content-row1-data">
+                        <h3>Inicia el proceso de afiliación</h3>
+                        <p>Queremos acompañarte en tu crecimiento, protegiendo el activo más valioso de tu empresa, a tus colaboradores.</p>
+                        <a href="#"><span>Quiero afiliar a mi empresa</span> <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="afiliaciones-content-row2">
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/2-2.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>¿Cómo puedo afiliar a mi empresa?</h3>
+                            <p>Consulta tu afiliación con el tipo de documento y el número de identificación de la empresa o el colaborador</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/3-2.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>Beneficios de afiliar a tu empresa</h3>
+                            <p>Consulta el estado actual del trámite de afiliación como empleador o independiente</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="afiliaciones-content" id="afiliaciones-content-3">
+                <div class="afiliaciones-content-row1">
+                    <div class="afiliaciones-content-row1-img">
+                        <img src="assets/images/afiliaciones/1-3.png" />
+                    </div>
+                    <div class="afiliaciones-content-row1-data">
+                        <h3>Afíliate como independiente</h3>
+                        <p>Responde las preguntas que encuentras en el formulario y conoce la opción que debes elegir para realizar tu afiliación como independiente voluntario o prestador de servicios.</p>
+                        <a href="#"><span>¡Quiero afiliarme!</span> <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="afiliaciones-content-row2">
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/2-3.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>¿Cómo puedes afiliarte si eres independiente voluntario?</h3>
+                            <p>Consulta tu afiliación con el tipo de documento y el número de identificación de la empresa o el colaborador</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/3-3.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>Requisitos para tu afiliación</h3>
+                            <p>Consulta el estado actual del trámite de afiliación como empleador o independiente</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="afiliaciones-content" id="afiliaciones-content-4">
+                <div class="afiliaciones-content-row1">
+                    <div class="afiliaciones-content-row1-img">
+                        <img src="assets/images/afiliaciones/1-4.png" />
+                    </div>
+                    <div class="afiliaciones-content-row1-data">
+                        <h3>Bienvenido a la ARL</h3>
+                        <p>Si ya estás afiliado, esta información es importante para ti, así será más fácil comprender tus responsabilidades y coberturas relacionadas con tu seguridad y protección en tu lugar de trabajo.</p>
+                        <a href="#"><span>Conoce más</span> <i class="far fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="afiliaciones-content-row2">
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/2-2.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>Consulta si estás afiliado a la ARL</h3>
+                            <p>Consulta tu afiliación con el tipo de documento y el número de identificación de la empresa o el colaborador</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="afiliaciones-content-col">
+                        <div class="afiliaciones-content-col-img">
+                            <img src="assets/images/afiliaciones/3-2.png" />
+                        </div>
+                        <div class="afiliaciones-content-col-data">
+                            <h3>Consulta el estado de tu afiliación</h3>
+                            <p>Consulta el estado actual del trámite de afiliación como empleador o independiente</p>
+                        </div>
+                        <a href="#" class="afiliaciones-content-col-button">
+                            <span>Conocer más</span>
+                            <i class="far fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--Solicitud de certificados y carne-->
+    <div class="certificados-parent">
+        <div class="certificados-app">
+            <h1>Solicitud de certificados y carné</h1>
+            <br>
+            <br>
+
+            <div class="certificados-wrap">
+                <div id="certificados-wrapper" active="1" total="2" class="certificados-wrapper-active-1" active-class="certificados-wrapper-active">
+                    <div class="certificados-page">
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/1.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Certificado y carné de afiliación</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/2.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Carné con o sin logo de la empresa</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/3.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Cobertura en el exterior empleados</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/4.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Cobertura en el exterior empresas</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                    </div>
+                    <div class="certificados-page">
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/1.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Certificado y carné de afiliación</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/2.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Carné con o sin logo de la empresa</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/3.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Cobertura en el exterior empleados</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                        <div class="certificados-card">
+                            <div class="certificados-card-img">
+                                <img src="assets/images/certificados/4.png" />
+                            </div>
+                            <div class="certificados-card-content">
+                                <h3>Cobertura en el exterior empresas</h3>
+                                <p>Solicítalo en línea, descárgalo fácil y rápido sin desplazamientos e imprímelo en el lugar en el que te encuentres.</p>
+                            </div>
+                            <a class="certificados-card-button" href="#">Generar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination-app" id="certificados-pagination">
+                <button type="button" class="pagination-prev-btn" onclick="clickSliderPrev('certificados-wrapper', 'certificados-pagination')">
+                    <i class="far fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="pagination-pages">
+                    <div class="pagination-page pagination-page-active"></div>
+                    <div class="pagination-page"></div>
+                </div>
+                <button type="button" class="pagination-next-btn" onclick="clickSliderNext('certificados-wrapper', 'certificados-pagination')">
+                    <i class="far fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+    
+        </div>
+    </div>
+
+    <script src="assets/scripts/menu.js"></script>
+    <script src="assets/scripts/pagination.js"></script>
+    <script src="assets/scripts/afiliaciones.js"></script>
+</body>
+</html>
