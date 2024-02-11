@@ -91,7 +91,8 @@
     font-size: 22px;
     color: #26328C;
     font-weight: normal;
-    line-height: normal;
+    line-height: 22px;
+    margin-bottom: 10px;
 }
 .certificados-card-content p{
     font-family: 'Barlow-Regular';
@@ -126,13 +127,13 @@
 }
 
 .certificados-card:hover .certificados-card-img{
-    height: 126px;
+    height: 116px;
 }
 
 .certificados-card:hover .certificados-card-content{
     height: auto;
-    height: calc(100% - (126px + 48px + 20px + 20px));
-    height: -moz-calc(100% - (126px + 48px + 20px + 20px));
+    height: calc(100% - (116px + 48px + 20px + 20px));
+    height: -moz-calc(100% - (116px + 48px + 20px + 20px));
 }
 .certificados-card:hover .certificados-card-content p{
     opacity: 1;

@@ -160,7 +160,6 @@
     transform: rotate(-45deg);
     border-right: #FFFFFF solid 2px;
     border-bottom: #FFFFFF solid 2px;
-    box-sizing: border-box;
 
     opacity: 0;
 

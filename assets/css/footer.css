@@ -23,7 +23,6 @@ footer{
 .footer-col{
     width: 100%;
     display: block;
-    box-sizing: border-box;
 }
 .footer-col h3{
     font-family: 'Barlow-Semibold';
@@ -68,7 +67,6 @@ footer{
     font-family: 'Barlow-Bold';
 }
 .footer-logo{
-    box-sizing: border-box;
     padding-left: 10px;
 }
 .footer-logo img{
