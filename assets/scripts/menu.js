@@ -1,18 +1,25 @@
 function clickMainMenu(m){
     var menus_dropdowns = document.getElementById('main-menu-ul').getElementsByClassName('main-menu-item')
-    var activo = false
+    var activo = 0
     for(i = 0;i<menus_dropdowns.length;i++){
         var current_class = menus_dropdowns[i].className
         if(current_class.indexOf('show')!=-1){
-            activo = true
+            activo = (i+1)
         }
         menus_dropdowns[i].className = 'main-menu-item main-menu-item-hidden'
     }
+    var items = document.getElementById('header-main-menu').getElementsByTagName('li')
+    for(i = 0;i<items.length;i++){
+        items[i].className = 'header-main-menu-item'
+    }
 
-    if(activo){
+    if(activo==m){
+        console.log("ocultar, click en el mismo")
         document.getElementById('main-menu').className = 'main-menu-hidden'
     }else{
+        console.log("click en otro")
         menus_dropdowns[m-1].className = 'main-menu-item main-menu-item-show'
+        items[m-1].className = 'header-main-menu-item header-main-menu-item-active'
         document.getElementById('main-menu').className = 'main-menu-show'
     }
 }
