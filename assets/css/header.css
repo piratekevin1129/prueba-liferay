@@ -35,7 +35,7 @@
     background-color: #2D6DF6;
     width: 100%;
 }
-.header-main-menu{
+.header-main-menu-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@
     padding: 15px 0px;
 }
 
-.header-main-menu > img{
+.header-main-menu-row > img{
     display: block;
     width: 110px;
     height: 38px;
@@ -61,29 +61,47 @@
     justify-content: flex-end;
 }
 
-.main-menu-content{
+.header-main-menu-content{
 
 }
-.main-menu{
+.header-main-menu{
     display: flex;
     list-style: none;
 }
-.main-menu > li{
+.header-main-menu > li{
+    display: block;
+    list-style: none;
+}
+.header-main-menu-item /*button*/{
+    outline: none;
+    outline-width: 0;
+    background-color: #2D6DF6;
+    border: none;
+
     display: flex;
     align-items: center;
     width: auto;
     height: auto;
-    margin-right: 20px;
-    list-style: none;
+
+    min-height: 40px;
+    padding: 0px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: background-color 0.25s;
 }
-.main-menu > li > p{
+.header-main-menu-item:focus{
+    background-color: #26328C;
+}
+
+.header-main-menu-item > p{
     font-family: 'Barlow-Semibold';
     font-size: 16px;
     color: #FFFFFF;
     font-weight: normal;
     line-height: normal;
 }
-.main-menu > li > i{
+.header-main-menu-item > i{
     font-size: 18px;
     margin-left: 10px;
     color: #FFFFFF;
@@ -96,7 +114,7 @@
     outline-width: 0;
     outline: none;
     width: auto;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .buscar-btn i{
     font-size: 18px;
@@ -110,7 +128,7 @@
     color: #FFFFFF;
     font-weight: normal;
     line-height: normal;
-    margin-right: 20px;
+    margin-right: 15px;
     text-decoration: none;
 }
                     

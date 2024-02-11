@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/footer.css" rel="stylesheet" type="text/css" />
+    
+
+    <!-- Library font awesome pro -->
+    <script src="https://kit.fontawesome.com/7b8122d71f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-accesibilidad-parent">
+            <div class="header-accesibilidad">
+                <div class="accesibilidad-btn">
+                    <p>Accesibilidad</p>
+                    <i class="fal fa-universal-access" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header-main-menu-parent">
+            <div class="header-main-menu-row">
+                <img src="assets/images/logo-sura.svg" />
+                <div class="main-menu-right">
+                    <nav class="header-main-menu-content">
+                        <ul class="header-main-menu">
+                            <li onclick="clickMainMenu(1)">
+                                <button class="header-main-menu-item" type="button">
+                                    <p>Afiliarme</p>
+                                    <i class="far fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li onclick="clickMainMenu(2)">
+                                <button class="header-main-menu-item" type="button">
+                                    <p>Atención en salud</p>
+                                    <i class="far fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li onclick="clickMainMenu(3)">
+                                <button class="header-main-menu-item" type="button">
+                                    <p>Trámites</p>
+                                    <i class="far fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li onclick="clickMainMenu(4)">
+                                <button class="header-main-menu-item" type="button">
+                                    <p>Centro de ayuda</p>    
+                                    <i class="far fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="buscar-btn">
+                        <i class="fal fa-search" aria-hidden="true"></i>
+                    </button>
+                    <a href="#" class="pago-express-btn">
+                        Pago Express
+                    </a>
+                    <a href="#" class="iniciar-sesion-btn">
+                        Iniciar sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-arl-parent">
+            <div class="header-arl">
+                <p>ARL</p>
+            </div>
+        </div>
+
+        <nav id="main-menu" class="main-menu-hidden">
+            <ul id="main-menu-ul">
+                <li class="main-menu-item main-menu-item-hidden">
+                    <div class="main-menu-row">
+                        <div class="main-menu-col1">
+                            <h1>Afiliarme</h1>
+                            <div class="main-menu-img">
+                                <img src="assets/images/menu/1.png" />
+                            </div>
+                        </div>
+                        <div class="main-menu-col2">
+                            <ul class="main-menu-subitems">
+                                <li>
+                                    <span>¿Cómo realizar una afiliación?</span>
+                                </li>
+                                <li>
+                                    <span>¡Quiero afiliarme!</span>
+                                </li>
+                                <li>
+                                    <span>Consulta si estas afiliado a la ARL</span>
+                                </li>
+                                <li>
+                                    <span>Consulta estado de afiliación</span>
+                                </li>
+                                <li>
+                                    <span>Traslado de ARL</span>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </li>
+
+                <li class="main-menu-item main-menu-item-hidden">
+                    <div class="main-menu-row">
+                        <div class="main-menu-col1">
+                            <h1>Atención en salud</h1>
+                            <div class="main-menu-img">
+                                <img src="assets/images/menu/2.png" />
+                            </div>
+                        </div>
+                        <div class="main-menu-col2">
+                            <ul class="main-menu-subitems" dropdown="subitems-menu-atencion">
+                                <li onmouseenter="toggleSubitems(this, 1)" onmouseleave="toggleSubitems(this)">
+                                    <span>Gestiona tu cita como independiente o colaborador</span>
+                                </li>
+                                <li onmouseenter="toggleSubitems(this, 2)" onmouseleave="toggleSubitems(this)">
+                                    <span>Gestiona tu cita como empresa</span>
+                                </li>
+                                <li onmouseenter="toggleSubitems(this, 3)" onmouseleave="toggleSubitems(this)">
+                                    <span>Solicitud de medicamentos</span>
+                                </li>
+                                <li onmouseenter="toggleSubitems(this, 4)" onmouseleave="toggleSubitems(this)">
+                                    <span>Te acompañamos en tu recuperación</span>
+                                </li>
+                                <li>
+                                    <span>¿Cómo solicitar tu historia clínica?</span>
+                                </li>
+                                <li>
+                                    <span>Gestión en salud y reincorporación socio laboral</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-menu-col3" id="subitems-menu-atencion">
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Asigna o reprograma tu cita médica</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Cómo agendar una cita?</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Exámenes médicos</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Asigna o reprograma la cita médica de tu colaborador</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Cómo solicitar medicamentos?</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Cómo autorizar medicamentos?</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Dónde reclamar medicamentos?</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Ejercicios de recuperación</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Dónde realizar terapias físicas</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a target="#">Conócenos</a></li>
+                        <li><a target="#">Trabaja con nosotros</a></li>
+                        <li><a target="#">RUT Seguros de vida suramericana</a></li>
+                        <li><a target="#">Línea ética</a></li>
+                        <li><a target="#">Gestión Corporativa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo">
+                    <img src="assets/images/logo-sura-footer.svg" />
+                </div>
+            </div>
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Legales</h3>
+                    <ul>
+                        <li><a target="#">Normatividad</a></li>
+                        <li><a target="#">Ley de transparencia</a></li>
+                        <li><a target="#">Defensor al consumidor financiero</a></li>
+                        <li><a target="#">Atención al consumidor financiero</a></li>
+                        <li><a target="#">Políticas de uso y seguridad</a></li>
+                        <li><a target="#">Política de privacidad y ley de datos</a></li>
+                        <li><a target="#">Legislación</a></li>
+                        <li><a target="#">Estados financieros</a></li>
+                        <li><a target="#">Consulta de aportes PILA</a></li>
+                        <li><a target="#">Centro de documentación</a></li>
+                        <li><a target="#">Informe anual</a></li>
+                        <li><a target="#">Ir a FOGAFIN</a></li>
+                        <li><a target="#">Seguro de cumplimiento</a></li>
+                        <li><a target="#">Fraudes y denuncias</a></li>
+                        <li><a target="#">Cómo identificar un sitio seguro</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Canales de atención</h3>
+                    <ul>
+                        <li><a target="#">Escríbenos tus PQRS</a></li>
+                        <li><a target="#">Preguntas frecuentes</a></li>
+                        <li><a target="#">Nuestras sedes</a></li>
+                        <li><a target="#">Glosario</a></li>
+                    </ul>
+                    <p>Correo: notijuridico@suramericana.com.co</p>
+                </div>
+            </div>
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Líneas de atención</h3>
+                    
+                    <p>Llámanos sin costo <h5>#888</h5></p>
+                    <p>Bogotá <h6>60143 78888</h6></p>
+                    <p>Cali <h6>60243 78888</h6></p>
+                    <p>Medellín <h6>60443 78888</h6></p>
+                    <p>Resto del país <h6>01 8000 51 8888</h6></p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a target="#">GRUPO SURA</a></li>
+                <li><a target="#">SURAMERICANA</a></li>
+                <li><a target="#">ARL SURA</a></li>
+                <li><a target="#">EPS SURA</a></li>
+                <li><a target="#">PROVEEDORES</a></li>
+                <li><a target="#">ASESORES</a></li>
+                <li><a target="#">GEOSURA</a></li>
+                <li><a target="#">FUNDACIÓN SURA</a></li>
+                <li><a target="#">GEOCIENCIAS</a></li>
+            </ul>
+        </nav>
+        <div class="footer-redes">
+            <div class="footer-copyright">© Copyright SURA 2024</div>
+            <div class="footer-redes-sociales">
+                <a href="#"><img src="assets/images/redes/facebook.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/instagram.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/linkedin.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/twitter.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/youtube.jpg" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/menu.js"></script>
+    <script src="assets/scripts/pagination.js"></script>
+    <script src="assets/scripts/afiliaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+footer{
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 25px;
+}
+.footer-row{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+.footer-col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 25%;
+    padding: 0px 10px;
+}
+
+.footer-col{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.footer-col h3{
+    font-family: 'Barlow-Semibold';
+    font-size: 18px;
+    color: #26328C;
+    line-height: normal;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.footer-col ul{
+    display: block;
+    list-style: none;
+}
+.footer-col li{
+    display: block;
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer-col li a, 
+.footer-col > p{
+    text-decoration: none !important;
+    font-family: 'Barlow-Regular';
+    font-size: 14px;
+    color: #2D6DF6;
+    font-weight: normal;
+    line-height: normal;
+}
+.footer-col li a:hover{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.footer-col > h5,
+.footer-col > h6{
+    text-decoration: none !important;
+    font-family: 'Barlow-SemiBold';
+    font-size: 25px;
+    color: #2D6DF6;
+    font-weight: normal;
+    line-height: normal;
+}
+.footer-col > h5{
+    font-family: 'Barlow-Bold';
+}
+.footer-logo{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.footer-logo img{
+    width: 147px;
+    display: block;
+}
+
+.footer-nav{
+    width: 100%;
+    background-color: #2D6DF6;
+    margin-top: 24px;
+}
+.footer-nav ul{
+    display: flex;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.footer-nav li{
+    display: flex;
+    height: auto;
+    padding: 22px 0px;
+    list-style: none;
+}
+.footer-nav li a{
+    font-family: 'Barlow-Regular';
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.footer-redes{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+.footer-copyright{
+    display: block;
+    font-family: 'Barlow-Regular';
+    font-size: 14px;
+    color: #00378F;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.footer-redes-sociales{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-redes-sociales img{
+    display: block;
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+}
