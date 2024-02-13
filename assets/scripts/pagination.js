@@ -1,3 +1,5 @@
+console.log("ready Pagination!")
+
 function clickPaginationPrev(component_name, pagination_name){
     var componente = document.getElementById(component_name)
     var active_page = componente.getAttribute('active')
@@ -45,14 +47,15 @@ function clickSliderPrev(component_name, pagination_name){
     var componente = document.getElementById(component_name)
     var active_page = componente.getAttribute('active')
     var total_page = componente.getAttribute('total')
-    var active_class = componente.getAttribute('active-class')
+    //var active_class = componente.getAttribute('active-class')
 
     var pages = document.getElementById(pagination_name).getElementsByClassName('pagination-pages')[0].getElementsByClassName('pagination-page')
     if(active_page>1){
         pages[active_page-1].classList.remove('pagination-page-active')
         active_page--
         componente.setAttribute('active',active_page)
-        componente.className = active_class+'-'+active_page
+        componente.style.left = '-'+((active_page-1)*100)+'%'
+        //componente.className = active_class+'-'+active_page
         pages[active_page-1].classList.add('pagination-page-active')
     }
 }
@@ -61,14 +64,14 @@ function clickSliderNext(component_name, pagination_name){
     var componente = document.getElementById(component_name)
     var active_page = componente.getAttribute('active')
     var total_page = componente.getAttribute('total')
-    var active_class = componente.getAttribute('active-class')
+    //var active_class = componente.getAttribute('active-class')
 
     var pages = document.getElementById(pagination_name).getElementsByClassName('pagination-pages')[0].getElementsByClassName('pagination-page')
     if(active_page<total_page){
         pages[active_page-1].classList.remove('pagination-page-active')
         active_page++
         componente.setAttribute('active',active_page)
-        componente.className = active_class+'-'+active_page
+        componente.style.left = '-'+((active_page-1)*100)+'%'
         pages[active_page-1].classList.add('pagination-page-active')
     }
 }

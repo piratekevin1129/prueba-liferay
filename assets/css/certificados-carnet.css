@@ -31,12 +31,6 @@
 
     transition: left 1s;
 }
-.certificados-wrapper-active-1{
-    left: 0px;
-}
-.certificados-wrapper-active-2{
-    left: -100%;
-}
 
 .certificados-page{
     display: flex;
@@ -124,6 +118,9 @@
     font-weight: normal;
     line-height: normal;
     margin: 20px 0px;
+}
+.certificados-card-button:hover{
+    text-decoration: none !important;
 }
 
 .certificados-card:hover .certificados-card-img{

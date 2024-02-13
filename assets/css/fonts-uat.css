@@ -1,0 +1,51 @@
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    position: relative;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Barlow-Bold";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://sura-uat.lxc.liferay.com/documents/d/keevin/barlow-bold-1") format('truetype');
+}
+
+@font-face {
+    font-family: "Barlow-SemiBold";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://sura-uat.lxc.liferay.com/documents/d/keevin/barlow-semibold-1") format('truetype');
+}
+
+@font-face {
+    font-family: "Barlow-Medium";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://sura-uat.lxc.liferay.com/documents/d/keevin/barlow-medium-1") format('truetype');
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://sura-uat.lxc.liferay.com/documents/d/keevin/barlow-regular-1") format('truetype');
+}
+
+@font-face {
+    font-family: "Barlow-Light";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://sura-uat.lxc.liferay.com/documents/d/keevin/barlow-light-1") format('truetype');
+}

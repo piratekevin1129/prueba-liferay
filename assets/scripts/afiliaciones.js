@@ -1,3 +1,4 @@
+console.log("ready Afiliaciones!")
 function clickAfiliacion(a){
     var i = 0;
     var tabs = document.getElementById('afiliaciones-header').getElementsByClassName('afiliaciones-header-tab')
