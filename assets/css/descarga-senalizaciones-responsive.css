@@ -1,0 +1,68 @@
+@media (max-width: 520px){
+
+    header,footer{
+        display: none;
+    }
+
+    .descarga-senalizacion-app{
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 24px;
+    }
+
+    .descarga-senalizacion-col{
+        margin: 12px 0px;
+        display: block;
+        width: 100%;
+    }
+        
+    .descarga-senalizacion-card{
+        width: 100%;
+        height: auto;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .descarga-senalizacion-card-img{
+        height: 123px;
+    }
+
+    .descarga-senalizacion-card-info{
+        margin: 15px 0px;
+    }
+    .descarga-senalizacion-card-info p{
+        text-align: center;
+    }
+
+    .descarga-senalizacion-card-button-wrap{
+        width: 140px;
+        height: 42px;
+        border-radius: 21px;
+        
+        left: 50%;
+        left: calc(50% - 70px);
+        left: -moz-calc(50% - 70px);
+    }
+    .descarga-senalizacion-card-button{
+        width: 140px;
+        height: 42px;
+    }
+    .descarga-senalizacion-card-button-icon{
+        transform: scale(1);
+    }
+
+    /******modal*****/
+    .descarga-senalizacion-modal-content{
+        width: 300px;
+        padding: 15px;
+    }
+    .descarga-senalizacion-modal-content section{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .descarga-senalizacion-modal-content section a:first-child{
+        margin-bottom: 10px;
+    }
+}

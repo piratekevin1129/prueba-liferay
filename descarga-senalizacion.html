@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/descarga-senalizaciones.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/descarga-senalizaciones-responsive.css" rel="stylesheet" type="text/css" />
+
+    <!-- Library font awesome pro -->
+    <script src="https://kit.fontawesome.com/7b8122d71f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-accesibilidad-parent">
+            <div class="header-accesibilidad">
+                <div class="accesibilidad-btn">
+                    <p>Accesibilidad</p>
+                    <i class="fal fa-universal-access" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header-main-menu-parent">
+            <div class="header-main-menu-row">
+                <img src="assets/images/logo-sura.svg" />
+                <div class="main-menu-right">
+                    <nav class="header-main-menu-content">
+                        <ul id="header-main-menu">
+                            <li onclick="clickMainMenu(1)" class="header-main-menu-item">
+                                <p>Afiliarme</p>
+                                <i class="far fa-angle-down" aria-hidden="true"></i>
+                            </li>
+                            <li onclick="clickMainMenu(2)" class="header-main-menu-item">
+                                <p>Atención en salud</p>
+                                <i class="far fa-angle-down" aria-hidden="true"></i>
+                            </li>
+                            <li onclick="clickMainMenu(3)" class="header-main-menu-item">
+                                <p>Trámites</p>
+                                <i class="far fa-angle-down" aria-hidden="true"></i>
+                            </li>
+                            <li onclick="clickMainMenu(4)" class="header-main-menu-item">
+                                <p>Centro de ayuda</p>    
+                                <i class="far fa-angle-down" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="buscar-btn">
+                        <i class="fal fa-search" aria-hidden="true"></i>
+                    </button>
+                    <a href="#" class="pago-express-btn">
+                        Pago Express
+                    </a>
+                    <a href="#" class="iniciar-sesion-btn">
+                        Iniciar sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-arl-parent">
+            <div class="header-arl">
+                <p>ARL</p>
+            </div>
+        </div>
+
+        <nav id="main-menu" class="main-menu-hidden">
+            <ul id="main-menu-ul">
+                <li class="main-menu-item main-menu-item-hidden">
+                    <div class="main-menu-row">
+                        <div class="main-menu-col1">
+                            <h1>Afiliarme</h1>
+                            <div class="main-menu-img">
+                                <img src="assets/images/menu/1.png" />
+                            </div>
+                        </div>
+                        <div class="main-menu-col2">
+                            <ul class="main-menu-subitems">
+                                <li>
+                                    <span>¿Cómo realizar una afiliación?</span>
+                                </li>
+                                <li>
+                                    <span>¡Quiero afiliarme!</span>
+                                </li>
+                                <li>
+                                    <span>Consulta si estas afiliado a la ARL</span>
+                                </li>
+                                <li>
+                                    <span>Consulta estado de afiliación</span>
+                                </li>
+                                <li>
+                                    <span>Traslado de ARL</span>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </li>
+
+                <li class="main-menu-item main-menu-item-hidden">
+                    <div class="main-menu-row">
+                        <div class="main-menu-col1">
+                            <h1>Atención en salud</h1>
+                            <div class="main-menu-img">
+                                <img src="assets/images/menu/2.png" />
+                            </div>
+                        </div>
+                        <div class="main-menu-col2">
+                            <ul class="main-menu-subitems" dropdown="subitems-menu-atencion">
+                                <li onmouseenter="toggleSubitems(this, 1)" onmouseleave="toggleSubitems(this)">
+                                    <span>Gestiona tu cita como independiente o colaborador</span>
+                                </li>
+                                <li onmouseenter="toggleSubitems(this, 2)" onmouseleave="toggleSubitems(this)">
+                                    <span>Gestiona tu cita como empresa</span>
+                                </li>
+                                <li onmouseenter="toggleSubitems(this, 3)" onmouseleave="toggleSubitems(this)">
+                                    <span>Solicitud de medicamentos</span>
+                                </li>
+                                <li onmouseenter="toggleSubitems(this, 4)" onmouseleave="toggleSubitems(this)">
+                                    <span>Te acompañamos en tu recuperación</span>
+                                </li>
+                                <li>
+                                    <span>¿Cómo solicitar tu historia clínica?</span>
+                                </li>
+                                <li>
+                                    <span>Gestión en salud y reincorporación socio laboral</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-menu-col3" id="subitems-menu-atencion">
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Asigna o reprograma tu cita médica</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Cómo agendar una cita?</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Exámenes médicos</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Asigna o reprograma la cita médica de tu colaborador</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Cómo solicitar medicamentos?</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Cómo autorizar medicamentos?</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>¿Dónde reclamar medicamentos?</span>
+                                </li>
+                            </ul>
+                            <ul class="main-menu-subitems2">
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Ejercicios de recuperación</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-clipboard-list-check"></i>
+                                    <span>Dónde realizar terapias físicas</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <div class="descarga-senalizacion-app">
+        <h1>Descarga de señalización</h1>
+        <br>
+        <p>La señalización es una de las herrramientas de prevención que complementa las estrategias de promoción para la salud y la seguridad en los lugares de trabajo. Estas permiten identificar los peligros y disminuir los riesgos que resultan peligrosos por el solo hecho de ser desconocidos.</p>
+        <br>
+        <br>
+        <div id="descarga-senalizacion-row">
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/peligro-riesgo-electrico.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Peligro: </span>Riesgo eléctrico</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/peligro-carga-suspendida.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Peligro: </span>Carga suspendida</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-salida-emergencia.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Salida de emergencia</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-salida.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Salida</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-salida-2.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Salida</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-via-evacuacion.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Vía de evacuación</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-via-evacuacion-2.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Vía de evacuación</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-primeros-auxilios.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Primeros auxilios</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-lava-ojos.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Lavaojos</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-duchas-emergencia.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Evacuación: </span>Duchas emergencia</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/evacuacion-duchas-emergencia.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Señal: </span>Respire con tranquilidad</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-use-proteccion-oidos.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Use protección oidos</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-use-guantes.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Use guantes</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-use-proteccion-facial.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Use protección facial</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-use-mascara.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Use máscara</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/senal-zona-controlada.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Señal: </span>Zona controlada</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-use-gafas.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Use gafas</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-use-casco.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Use casco</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/senal-zona-supervisada.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Señal: </span>Zona supervisada</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-use-mascara-2.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Use máscara</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/prohibido-uso-del-ascensor.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Prohibido: </span>El uso de ascensor</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/prohibido-personal-autorizado.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Prohibido: </span>Personal autorizado</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/contra-incendios-extintor.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Contra incendios: </span>Extintor</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/contra-incendios-extintor-2.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Contra incendios: </span>Extintor</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/contra-incendios-extintor-3.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Contra incendios: </span>Extintor</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-conserve-distancia.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Conserva la distancia</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-limpieza-vehiculos.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Limpieza de vehículos</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-desinfecta-calzado.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Desinfecta tu calzado</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/prohibido-evita-tocarte-cara.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Prohibido: </span>Evita tocarte la cara</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-zona-temperatura.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Zona de temperatura</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-usa-mascarilla.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Usa mascarilla</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-conserve-distancia-2.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Conserva la distancia</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-zona-desinfeccion.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Zona de desinfección</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-lavate-las-manos.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Lávate las manos</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-usa-guantes.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Usa guantes</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/obligacion-zona-aislamiento.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Obligación: </span>Zona aislamiento</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/precaucion-piso-humedo.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Precaución: </span>Piso húmedo</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+            <div class="descarga-senalizacion-col" onclick="setModalSenalizacion(this)" dataurl="assets/documents/ejemplo-senalizacion.pdf">
+                <div class="descarga-senalizacion-card">
+                    <div class="descarga-senalizacion-card-img">
+                        <img src="assets/images/senalizacion/cards/precaucion-inflamable.png" />
+                    </div>
+                    <div class="descarga-senalizacion-card-info">
+                        <p><span>Precaución: </span>Inflamable</p>
+                    </div>
+                    <div class="descarga-senalizacion-card-button-container">
+                        <a class="descarga-senalizacion-card-button-wrap">
+                            <div class="descarga-senalizacion-card-button">
+                                <p class="descarga-senalizacion-card-button-text">Descargar</p>
+                                <div class="descarga-senalizacion-card-button-icon"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="descarga-senalizacion-link" href="" target="_blank"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="descarga-senalizacion-modal" class="descarga-senalizacion-modal-off">
+        <div class="descarga-senalizacion-modal-back"></div>
+        <div class="descarga-senalizacion-modal-content">
+            <h3>¿Seguro de descargar esta señal?</h3>
+            <br>
+            <p>Una vez que completes la descarga, podrás encontrar el archivo de manera fácil en la carpeta de descargas de tu computadora.</p>
+            <br>
+            <!--<label class="descarga-senalizacion-modal-check">
+                <div class="descarga-senalizacion-modal-check-square"></div>
+                <span class="descarga-senalizacion-modal-check-text">No volver a preguntar</span>
+                <input type="checkbox" />
+            </label>-->
+            <label class="descarga-senalizacion-modal-check" onclick="askDownloadSwitch()">
+                <input type="checkbox" id="descarga_senalizacion_download_check" />
+                <span class="descarga-senalizacion-modal-check-square"></span>
+                <span class="descarga-senalizacion-modal-check-text">No volver a preguntar</span>
+            </label>
+            <br>
+            <section>
+                <a onclick="unsetModalSenalizacion()">Cancelar</a>
+                <a href="#" target="_blank" id="descarga-senalizacion-download" onclick="unsetModalSenalizacion(true)">Descargar</a>
+            </section>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Sobre Nosotros</h3>
+                    <ul>
+                        <li><a href="#">Conócenos</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">RUT Seguros de vida suramericana</a></li>
+                        <li><a href="#">Línea ética</a></li>
+                        <li><a href="#">Gestión Corporativa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo">
+                    <img src="assets/images/logo-sura-footer.svg" />
+                </div>
+            </div>
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Legales</h3>
+                    <ul>
+                        <li><a href="#">Normatividad</a></li>
+                        <li><a href="ley-de-transparencia.html">Ley de transparencia</a></li>
+                        <li><a href="#">Defensor al consumidor financiero</a></li>
+                        <li><a href="#">Atención al consumidor financiero</a></li>
+                        <li><a href="#">Políticas de uso y seguridad</a></li>
+                        <li><a href="#">Política de privacidad y ley de datos</a></li>
+                        <li><a href="#">Legislación</a></li>
+                        <li><a href="#">Estados financieros</a></li>
+                        <li><a href="#">Consulta de aportes PILA</a></li>
+                        <li><a href="#">Centro de documentación</a></li>
+                        <li><a href="#">Informe anual</a></li>
+                        <li><a href="#">Ir a FOGAFIN</a></li>
+                        <li><a href="#">Seguro de cumplimiento</a></li>
+                        <li><a href="#">Fraudes y denuncias</a></li>
+                        <li><a href="#">Cómo identificar un sitio seguro</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Canales de atención</h3>
+                    <ul>
+                        <li><a href="#">Escríbenos tus PQRS</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Nuestras sedes</a></li>
+                        <li><a href="#">Glosario</a></li>
+                        <li><a href="#">Correo: </a><p>notijuridico@suramericana.com.co</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col1">
+                <div class="footer-col">
+                    <h3>Líneas de atención</h3>
+                    <div class="footer-telefonos">
+                        <p>Llámanos sin costo</p>
+                        <h5>#888</h5>
+                        <p>Bogotá</p>
+                        <h6>60143 78888</h6>
+                        <p>Cali</p>
+                        <h6>60243 78888</h6>
+                        <p>Medellín</p>
+                        <h6>60443 78888</h6>
+                        <p>Resto del país</p>
+                        <h6>01 8000 51 8888</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">GRUPO SURA</a></li>
+                <li><a href="#">SURAMERICANA</a></li>
+                <li><a href="#">ARL SURA</a></li>
+                <li><a href="#">EPS SURA</a></li>
+                <li><a href="#">PROVEEDORES</a></li>
+                <li><a href="#">ASESORES</a></li>
+                <li><a href="#">GEOSURA</a></li>
+                <li><a href="#">FUNDACIÓN SURA</a></li>
+                <li><a href="#">GEOCIENCIAS</a></li>
+            </ul>
+        </nav>
+        <div class="footer-redes">
+            <div class="footer-copyright">© Copyright SURA 2024</div>
+            <div class="footer-redes-sociales">
+                <a href="#"><img src="assets/images/redes/facebook.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/instagram.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/linkedin.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/twitter.jpg" /></a>
+                <a href="#"><img src="assets/images/redes/youtube.jpg" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/menu.js"></script>
+    <script src="assets/scripts/descarga-senalizacion.js"></script>
+</body>
+</html>

@@ -62,16 +62,19 @@ footer{
     display: block;
     width: 100%;
 }
-.footer-telefonos p span{
+.footer-telefonos h5,
+.footer-telefonos h6{
     text-decoration: none !important;
-    font-family: 'Barlow-SemiBold';
     font-size: 25px;
     color: #2D6DF6;
     font-weight: normal;
     line-height: normal;
 }
-.footer-telefonos p:first-child span{
+.footer-telefonos h5{
     font-family: 'Barlow-Bold';
+}
+.footer-telefonos h6{
+    font-family: 'Barlow-SemiBold';
 }
 .footer-logo{
     padding-left: 10px;

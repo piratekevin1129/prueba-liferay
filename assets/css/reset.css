@@ -49,3 +49,53 @@ body, html{
     font-weight: normal;
     src: url("fonts/Barlow-Light.ttf") format('truetype');
 }
+
+/*************************************************/
+
+@font-face {
+    font-family: "SuraSans-Thin";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/SuraSans-Fina.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "SuraSans-Light";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/SuraSans-Ligera.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "SuraSans-Regular";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/SuraSans-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "SuraSans-SemiBold";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/SuraSans-Seminegrita.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "SuraSans-Bold";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/SuraSans-Negrita.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "SuraSans-Heavy";
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/SuraSans-Extranegrita.otf") format('opentype');
+}
