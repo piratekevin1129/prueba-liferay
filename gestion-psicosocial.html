@@ -303,31 +303,33 @@
             <br>
             <div class="gp-protocolos-row">
                 <div class="gp-protocolos-col1">
-                    <div class="gp-protocolos-items">
-                        <div class="gp-protocolos-item">
-                            <p class="gp-protocolos-item-title"><span>Protocolos de Intervención Sectorial</span><i class="fal fa-angle-right"></i></p>
+                    <div id="gp-protocolos-items">
+                        <div class="gp-protocolos-item gp-protocolos-item-active" id="gp-protocolo-item-1" onclick="clickProtocoloGP(this,1)">
+                            <p class="gp-protocolos-item-title"><span>Protocolos de Intervención Sectorial</span><i class="far fa-chevron-right"></i></p>
                             <p class="gp-protocolos-item-description">Coordinación estratégica para abordar situaciones específicas en diferentes sectores.</p>
                         </div>
-                        <div class="gp-protocolos-item">
-                            <p class="gp-protocolos-item-title"><span>Protocolos de Acciones Generales</span><i class="fal fa-angle-right"></i></p>
+                        <div class="gp-protocolos-item" id="gp-protocolo-item-2" onclick="clickProtocoloGP(this,2)">
+                            <p class="gp-protocolos-item-title"><span>Protocolos de Acciones Generales</span><i class="far fa-chevron-right"></i></p>
                             <p class="gp-protocolos-item-description">Directrices para implementar acciones generales en diversas situaciones.</p>
                         </div>
-                        <div class="gp-protocolos-item">
-                            <p class="gp-protocolos-item-title"><span>Protocolos de Prevención y Actuación en Salud Mental</span><i class="fal fa-angle-right"></i></p>
+                        <div class="gp-protocolos-item" id="gp-protocolo-item-3" onclick="clickProtocoloGP(this,3)">
+                            <p class="gp-protocolos-item-title"><span>Protocolos de Prevención y Actuación en Salud Mental</span><i class="far fa-chevron-right"></i></p>
                             <p class="gp-protocolos-item-description">Desafíos emocionales en el entorno laboral.</p>
                         </div>
-                        <div class="gp-protocolos-item">
-                            <p class="gp-protocolos-item-title"><span>Protocolos de Actuación en Situaciones específicas</span><i class="fal fa-angle-right"></i></p>
+                        <div class="gp-protocolos-item" id="gp-protocolo-item-4" onclick="clickProtocoloGP(this,4)">
+                            <p class="gp-protocolos-item-title"><span>Protocolos de Actuación en Situaciones específicas</span><i class="far fa-chevron-right"></i></p>
                             <p class="gp-protocolos-item-description">Guías para abordar situaciones particulares, como el duelo, de manera efectiva.</p>
                         </div>
                     </div>
                 </div>
                 <div class="gp-protocolos-col2">
-                    <div class="gp-protocolos-wrap">
-                        <div class="gp-protocolos-content">
-                            <h2>Protocolo intervención sectorial</h2>
+                    <div id="gp-protocolos-wrap">
+                        <div id="gp-protocolo-content-1" class="gp-protocolos-content gp-protocolos-content-active">
                             <section>
-                                <div><img src="assets/images/gestion-psicosocial/protocolos/1.png" /></div>
+                                <div>
+                                    <h2>Protocolo intervención sectorial</h2>
+                                    <img src="assets/images/gestion-psicosocial/protocolos/1.png" />
+                                </div>
                                 <div>
                                     <ul class="gp-protocolos-content-list">
                                         <li>Sector defensa.</li>
@@ -335,6 +337,49 @@
                                         <li>Sector transporte.</li>
                                         <li>Sector educativio</li>
                                         <li>Sector financiero.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="gp-protocolo-content-2" class="gp-protocolos-content">
+                            <section>
+                                <div>
+                                    <h2>Acciones generales</h2>
+                                    <img src="assets/images/gestion-psicosocial/protocolos/1.png" />
+                                </div>
+                                <div>
+                                    <ul class="gp-protocolos-content-list">
+                                        <li>Protocolo de acciones generales.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="gp-protocolo-content-3" class="gp-protocolos-content">
+                            <section>
+                                <div>
+                                    <h2>Protocolo salud mental</h2>
+                                    <img src="assets/images/gestion-psicosocial/protocolos/1.png" />
+                                </div>
+                                <div>
+                                    <ul class="gp-protocolos-content-list">
+                                        <li>Acoso laboral.</li>
+                                        <li>Actuación burnout.</li>
+                                        <li>Depresión.</li>
+                                        <li>Estrés postraumático</li>
+                                        <li>Estrés agudo.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="gp-protocolo-content-4" class="gp-protocolos-content">
+                            <section>
+                                <div>
+                                    <h2>Situaciones específicas</h2>
+                                    <img src="assets/images/gestion-psicosocial/protocolos/1.png" />
+                                </div>
+                                <div>
+                                    <ul class="gp-protocolos-content-list">
+                                        <li>Actuación situaciones de duelo.</li>
                                     </ul>
                                 </div>
                             </section>
@@ -440,6 +485,6 @@
     </footer>
 
     <script src="assets/scripts/menu.js"></script>
-    <script src="assets/scripts/descarga-senalizacion.js"></script>
+    <script src="assets/scripts/gestion-psicosocial-protocolos.js"></script>
 </body>
 </html>
